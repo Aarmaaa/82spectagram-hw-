@@ -5,12 +5,14 @@ import ProfileScreen from '../screens/Profile';
 
 const Drawer = createDrawerNavigator()
 
+// side Menu 
+
 const DrawerNavigator = () => {
     return(
-        <DrawerNavigator>
+        <Drawer.Navigator>
             <Drawer.Screen name="Home" component={TabNavigator} />
             <Drawer.Screen name="ProflieScreen" component={ProfileScreen} />
-        </DrawerNavigator>
+        </Drawer.Navigator>
     )
 }
 
