@@ -19,12 +19,12 @@ const BottomTab = () => {
             tabBarIcon:({focused, color, size})=>{
               var iconName;
               if(route.name === "Feed"){
-                iconName = focused ? "bool" : "book-outline"
+                iconName = focused ? "book" : "book-outline"
               }
               else if(route.name === "CreatePost"){
                 iconName = focused ? "create" : "create-outline"
               }
-              return <Ionicons name={iconName} size={size} color={color} style={styles.icons} />
+              return <Ionicons name={iconName} size={20} color={color}  />
             }
           })}
           inactiveColor={"gray"}
@@ -41,15 +41,11 @@ export default BottomTab;
 
 const styles = StyleSheet.create({
     bottomTabStyle:{
-      backgroundColor:"#010347",
+      backgroundColor:"#6eaceb",
       height:"8%",
       borderTopLeftRadius:30,
       borderTopRightRadius:30,
       position:"absolute",
       overflow:'hidden'
     },
-    icons:{
-      width:RFValue(30),
-      height:RFValue(30),
-    }
   })
